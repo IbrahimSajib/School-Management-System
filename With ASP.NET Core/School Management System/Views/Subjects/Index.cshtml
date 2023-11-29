@@ -1,0 +1,58 @@
+﻿@model IEnumerable<School_Management_System.Models.Subject>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card m-4">
+    <div class="card-header">
+        <h2 class="alert alert-success text-center">Subject List</h2>
+        <div class="d-flex justify-content-end">
+            <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped table-bordered">
+            <thead class="table-success">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(x => x.SubjectName)
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(x => item.SubjectName)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.SubjectId" class="btn btn-warning btn-sm">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.SubjectId" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-footer">
+        <div class="d-flex justify-content-end">
+            <ul class="pagination pagination-sm">
+                @for (int i = 1; i <= ViewBag.totalPages; i++)
+                {
+                    <li class='page-item @(ViewBag.currentPage==i?"active":"")'>
+                        @Html.ActionLink(i.ToString(), "Index", new { page = i }, new { @class = "page-link" })
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+

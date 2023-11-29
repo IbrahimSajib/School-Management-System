@@ -1,0 +1,76 @@
+﻿@model IEnumerable<School_Management_System.Models.Teacher>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card mt-2 mb-2">
+    <div class="card-header">
+        <h2 class="alert alert-success text-center">Teacher Information</h2>
+        <div class="d-flex justify-content-end">
+            <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Add Teacher</a>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-striped table-bordered text-center align-middle">
+            <thead class="table-success">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(x => x.TeacherName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(x => x.JoinDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(x => x.Salary)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(x => x.Phone)
+                    </th>
+                    <th>
+                        Subject List
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(x => item.TeacherName)</td>
+                        <td>@Html.DisplayFor(x => item.JoinDate)</td>
+                        <td>@Html.DisplayFor(x => item.Salary)</td>
+                        <td>@Html.DisplayFor(x => item.Phone)</td>
+                        <td>
+                            @foreach (var s in item.TeacherSubjects)
+                            {
+                                <p>@s.Subject.SubjectName</p>
+                            }
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.TeacherId" class="btn btn-warning btn-sm me-2"><i class="fa fa-edit"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.TeacherId" class="btn btn-danger btn-sm me-2"><i class="fa fa-trash"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.TeacherId" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+    <div class="card-footer pe-4">
+        <div class="d-flex justify-content-end">
+            <ul class="pagination pagination-sm">
+                @for (int i = 1; i <= ViewBag.totalPages; i++)
+                {
+                    <li class='page-item @(ViewBag.currentPage==i?"active":"")'>
+                        @Html.ActionLink(i.ToString(), "Index", new { page = i }, new { @class = "page-link" })
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+

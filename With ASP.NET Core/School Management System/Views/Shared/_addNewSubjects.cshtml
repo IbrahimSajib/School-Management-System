@@ -1,0 +1,9 @@
+﻿@model School_Management_System.Models.Subject
+<div class="row mb-2 d-flex justify-content-between">
+    <div class="col-10">
+        @Html.DropDownListFor(x=>x.SubjectId,ViewBag.subject as SelectList,"-----Select-----",new{@class="form-control"})
+    </div>
+    <div class="col-2">
+        <a id="deleteSubject" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+    </div>
+</div>

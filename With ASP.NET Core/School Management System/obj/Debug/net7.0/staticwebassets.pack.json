@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\ajax\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\ajax\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\ajax\\README.md",
+      "PackagePath": "staticwebassets\\lib\\ajax\\README.md"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\ajax\\dist\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\lib\\ajax\\dist\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\ajax\\package.json",
+      "PackagePath": "staticwebassets\\lib\\ajax\\package.json"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\Practice For Github\\School Management System\\With ASP.NET Core\\School Management System\\wwwroot\\lib\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.School Management System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.School Management System.props",
+      "PackagePath": "build\\School Management System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.School Management System.props",
+      "PackagePath": "buildMultiTargeting\\School Management System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.School Management System.props",
+      "PackagePath": "buildTransitive\\School Management System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

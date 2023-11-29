@@ -1,0 +1,102 @@
+﻿@model School_Management_System.ViewModels.TeacherVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2 class="alert alert-success text-center mt-2">Update Teacher Data</h2>
+<form asp-action="Edit" asp-controller="Teachers"  method="post">
+    <div class="row">
+        <div class="col-7">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Teacher Information</h3>
+                </div>
+                <div class="card-body ms-2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input asp-for="TeacherId" type="hidden" />
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="TeacherName" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="TeacherName" class="form-control form-control-sm" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="TeacherName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="JoinDate" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="JoinDate" class="form-control form-control-sm" type="date" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="JoinDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Salary" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Salary" class="form-control form-control-sm" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Salary" class="text-danger"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Phone" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Phone" class="form-control form-control-sm" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+
+        </div>
+        <div class="col-5">
+            <div class="card" style="min-height:275px">
+                <div class="card-header text-center">
+                    <h3>Select Subject</h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3 me-5">
+                        <a id="btnAddTS" class="btn btn-warning"><i class="fa fa-plus"></i> Add New</a>
+                    </div>
+                    <div id="subjectContainer">
+                        @foreach (var item in Model.SubjectList)
+                        {
+                            <script>
+                                LoadDataTS(@item)
+                            </script>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-2">
+            <input type="submit" value="Update Data" class="btn btn-success btn-lg" />
+        </div>
+
+    </div>
+</form>
+
+<div class="card-footer">
+    <div class="d-flex justify-content-start">
+        <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+    </div>
+</div>

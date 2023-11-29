@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card m-4">
+    <div class="card-header">
+        <h2 class="alert alert-success text-center">School Management System</h2>
+    </div>
+    <div class="card-body row">
+        <div class="card col text-center m-2">
+            <div class="card-header">
+                <h4 >Total Student</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalStudent</h1>
+                <a asp-action="Index" asp-controller="Students" class="btn btn-outline-success">View Details</a>
+            </div>
+
+        </div>
+        <div class="card col text-center m-2">
+            <div class="card-header">
+                <h4 >Total Teacher</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalTeacher</h1>
+                <a asp-action="Index" asp-controller="Teachers" class="btn btn-outline-success">View Details</a>
+            </div>
+        </div>
+        <div class="card col text-center m-2">
+            <div class="card-header">
+                <h4 >Total Subject</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalSubject</h1>
+                <a asp-action="Index" asp-controller="Subjects" class="btn btn-outline-success">View Details</a>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>

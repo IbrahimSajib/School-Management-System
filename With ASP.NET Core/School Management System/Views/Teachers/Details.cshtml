@@ -1,0 +1,68 @@
+﻿@model School_Management_System.Models.Teacher
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card row col-lg-8 mx-auto mt-3">
+    <h1 class=" card-header alert alert-info">Teacher Details</h1>
+    <div class="card-body mx-4">
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.TeacherName) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.TeacherName)
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.JoinDate) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.JoinDate)
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.Salary) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.Salary)
+            </div>
+        </div>
+        
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.Phone) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.Phone)
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>Subject List :</b>
+            </div>
+            <div class="col-5">
+                <ul>
+                    @foreach (var item in Model.TeacherSubjects)
+                    {
+                        <li>@item.Subject.SubjectName</li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-start">
+            <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+            <a asp-action="Edit" asp-route-id="@Model.TeacherId" class="btn btn-warning btn-sm me-2"><i class="fa fa-edit"></i> Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model.TeacherId" class="btn btn-danger btn-sm me-2"><i class="fa fa-trash"></i> Delete</a>
+        </div>
+    </div>
+</div>
